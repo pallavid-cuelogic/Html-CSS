@@ -6,7 +6,7 @@
 header
 {
 	position: fixed;
-	width: 1000px;
+	width: 1100px;
 	text-decoration: none;
 }
 
@@ -22,6 +22,7 @@ nav
 
 nav li 
 {
+	padding: 8px 10px;
 	display: inline;
 	color="white";
 	text-decoration: none!important;
@@ -30,9 +31,9 @@ nav li
 nav :nth-child(6)
 {
 	background-color: #a2c73c;
-	color: white;
+	color: #F8FAF4;
 	border-radius: 30px; 
-	text-decoration: none!important;
+	text-decoration: none;
 }
 
 #banner
@@ -57,9 +58,9 @@ nav :nth-child(6)
 #bannerlogo
 {
 	padding-left: 250px;
-	padding-top: 10px;
-	width:45px;
-	height:45px;
+	padding-top: 20px;
+	width:55px;
+	height:55px;
 }
 
 #bannerimg
