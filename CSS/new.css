@@ -15,13 +15,36 @@ header
 
 nav
 {
+	margin-left: 110px;
 	font-family: 'Quicksand', sans-serif;
 	float: right;
 	text-decoration: none;
-	line-height: 45px;
 	list-style-type: none;
     margin: 0;
-    padding: 5px;
+    padding: 25px;
+}
+
+#l
+{
+	height: 110px;
+    width: 110px;
+    margin-top: 20px;
+    position:relative;
+    float: left;
+    background-color: rgba(0, 0, 0, 0.0);
+    border-radius: 20px;
+	
+}
+
+
+#bannerlogo
+{
+	position: absolute;
+	margin-left: 320px;
+	margin-top: 15px;
+	width:75px;
+	height:75px;
+	z-index: 100;
 }
 
 nav li 
@@ -50,7 +73,7 @@ nav :nth-child(6)
 
 #bannerimg
 {
-	height: 190px;
+	height: 200px;
 	width: 200px;
 }
 
@@ -61,14 +84,6 @@ nav :nth-child(6)
 	font-size: 50px;
 	height: 80px;
 	color:white;
-}
-
-#bannerlogo
-{
-	padding-left: 250px;
-	padding-top: 20px;
-	width:70px;
-	height:80px;
 }
 
 #bannerimg
@@ -127,8 +142,6 @@ nav :nth-child(6)
 {
 	margin-top: 40px;
 	background-color: #075daa;
-	color:black;
-	border: none;
 }
 
 #gridContainer .square:nth-child(7)
@@ -140,8 +153,6 @@ nav :nth-child(6)
 {
 	margin-top: 112px;
 	background-color: #4494d1;
-	color:black;
-	border: none;
 }
 
 #gridContainer .square:nth-child(9)
@@ -152,8 +163,6 @@ nav :nth-child(6)
 #b4
 {
 	background-color: #0eb049;
-	color:black;
-	border: none;
 }
 
 #normalContainer
@@ -171,14 +180,111 @@ nav :nth-child(6)
 
 #first
 {
+	position: relative;
 	padding: 10px;
+}
+
+#l:after
+{
+	content: "";
+    height: 60px;
+    width: 110px;
+    margin-top: 50px;
+    background-color: rgba(0, 0, 0,0.7);
+    position: absolute;
+    float: left;
+    margin-left: 303px;
+    border-bottom-right-radius: 20px;
+    border-bottom-left-radius: 20px;
+}
+
+#first:after
+{
+	content: '';
+	position: absolute;
+	right: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-left-color: #a2c73c;
+	border-right: 0;
+	margin-top: -20px;
+	margin-right: -20px;
+}
+
+#second
+{
+	position: relative;
+	padding: 10px;
+}
+
+#second:after
+{
+	content: '';
+	position: absolute;
+	bottom: 0;
+	width: 0;
+	left: 50%;
+	height: 0;
+	border: 20px solid transparent;
+	border-top-color: #075daa;
+	border-bottom: 0;
+	margin-left: -20px;
+	margin-bottom: -15px;
+}
+
+#third
+{
+	padding: 10px;
+}
+
+#forth
+{
+	position: relative;
+	padding: 10px;
+}
+
+#forth:after
+{
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-bottom-color: #4494d1;
+	border-top: 0;
+	margin-left: -20px;
+	margin-top: -20px;
+}
+
+#fifth
+{
+	position: relative;
+	padding: 10px;
+}
+
+#fifth:after
+{
+	content: '';
+	position: absolute;
+	left: 0;
+	top: 50%;
+	width: 0;
+	height: 0;
+	border: 20px solid transparent;
+	border-right-color: #0eb049;
+	border-left: 0;
+	margin-top: -20px;
+	margin-left: -20px;
 }
 
 .Discover
 {
 	color:black;
 	border: none;
-	margin-bottom: 0;
 }
 
 #t
@@ -252,14 +358,109 @@ footer
 	height:360px;
 	width:100%;
 	text-decoration: none;
-	background-color: rgba(0, 0, 0, 0.7);
+	background-color:#0f151a;
 }
 
 #fot
 {
-	
+	font-family: 'Quicksand', sans-serif;
 	margin: 0 auto;
-    text-align: center;
-	width: 1000px;
+ 	width: 900px;
 	height: 360px;
+}
+
+#footer-logo
+{
+	position: relative; padding diliye
+	
+	top: 50px;
+	left: 170px;
+}
+
+#fot-logo1
+{
+	position: relative;
+	top: 150px;
+}
+
+#fot-logo2
+{
+	padding-left: 40px;
+	position: relative;
+	top: 150px;
+}
+
+#fot-logo3
+{
+	padding-left: 40px;
+	position: relative;
+	top: 150px;
+}
+
+#btn
+{
+	margin-top: 20px;
+}
+
+#fb1
+{
+	margin-left: 460px;
+	background-color: #0f151a;
+	border: none;
+	color: #3e6485;
+}
+
+#fb2
+{
+	margin-left: 70px;
+	background-color: #0f151a;
+	border: none;
+	color: #3e6485;
+}
+
+#fb3
+{
+	margin-left: 60px;
+	background-color: #0f151a;
+	border: none;
+	color: #3e6485;
+}
+
+#btn1
+{
+	margin-top: 40px;
+}
+
+#fb4
+{
+	margin-left: 460px;
+	background-color: #0f151a;
+	border: none;
+	color: #3e6485;
+}
+
+#fb5
+{
+	margin-left: 40px;
+	background-color: #0f151a;
+	border: none;
+	color: #3e6485;
+}
+
+#fb6
+{
+	margin-left: 110px;
+	background-color: #0f151a;
+	border: none;
+	color: #3e6485;
+}
+
+#footer-line
+{
+	height: 80px;
+	text-align: center;
+	background-color: #0f151a;
+	font-family: 'Quicksand', sans-serif;
+	border-top: 1px solid black;
+	color: #3e6485;
 }
