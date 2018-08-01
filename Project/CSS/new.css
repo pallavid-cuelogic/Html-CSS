@@ -2,7 +2,7 @@ body
 {
 	overflow-x: hidden;
 	font-family: 'Quicksand', sans-serif;
-	font-size: 18px;
+	font-size: 16px;
 }
 .container
 {
@@ -12,12 +12,20 @@ body
 	height: auto;
 	display: block;
 }
+#banner
+{
+	background-position: center;
+	height: 700px;
+	background-image: url(../Images/banner-img.png);
+	background-size: cover;
+}
 header
 {
 	position: fixed;
 	height:70px;
 	width:100%;
 	background-color: rgba(0, 0, 0, 0.7);
+	z-index: 100;
 }
 #header-nav
 {
@@ -26,11 +34,16 @@ header
 	list-style-type: none;
     padding: 5px;
 }
+#bannerlogo
+{
+	position: absolute;
+	margin-left: 100px;
+	margin-top: 15px;
+	z-index: 100;
+}
 #logoId
 {
-	height: 110px;
-    width: 110px;
-    margin-top: 15px;
+	margin-top: 15px;
     position:relative;
     float: left;
     background-color: transparent;
@@ -39,81 +52,108 @@ header
 #logoId:after
 {
 	content: "";
-    height: 60px;
+    height: 50px;
     width: 110px;
     margin-top: 55px;
     background-color: rgba(0, 0, 0,0.7);
     position: absolute;
     float: left;
-    margin-left: 303px;
+    margin-left: 80px;
     border-bottom-right-radius: 20px;
     border-bottom-left-radius: 20px;
 }
-#bannerlogo
+#ahref
 {
-	position: absolute;
-	margin-left: 320px;
-	margin-top: 15px;
-	width:75px;
-	height:75px;
-	z-index: 100;
+	color:white;
+	text-decoration: none;
 }
 nav ul li 
 {
+	display: inline;
 	padding: 8px 10px;
-	display: inline-grid;
-	color="white";
+	list-style-type: none;
+	color: white;
 	text-decoration: none;
+}
+header-nav a
+{
+	text-align: center;
+	display: block;
 }
 #btn
 {
+	color: white;
 	padding: 7px;
 	background-color: #a2c73c;
 	border-radius: 30px; 
 	text-decoration: none;
 	margin-right: 80px;
 }
-#banner
+#banner-graph
 {
-	background-position: center;
-	height: 700px;
-	background-image: url(../Images/banner-img.png);
-	background-size: cover;
-}
-#bannerimg
-{
-	height: 200px;
-	width: 200px;
+	margin-top: 160px;
+	margin-bottom: 0px;
 }
 #bannertitle
 {
-	padding-top: 60px;
-	height: 80px;
+	margin-top: 70px;
+	font-weight: bold;
+	font-size :50px;
 	color:white;
+	margin-bottom: 0px;
 }
-#bannerimg
+.big-button
 {
-	padding-top:170px;
-	padding-left: 15px;
-	width=200px;
-	height:150px;
-}
-#bannerbutton
-{
-	margin-top: 40px;
-	width:400px;
-	height: 40px;
+	margin-top: 90px;
+	width:560px;
+	height: 65px;
 	background-color: #a2c73c;
 	color:white;
 	border: none;
 	border-radius: 30px; 
+	font-size: 20px;
+	font-weight: bold;
+	margin-bottom: 110px;
 }
 .square
 {	
-	text-align: center;
 	float: left;
-  	height: 265px;
+ 	height: 265px;
 	width: 265px;
+}
+#square-text
+{
+	font-size: 18px;
+	font-weight: bold;
+}
+.color-style-p1
+{
+	color: #636462	
+}
+.color-style-p2
+{
+	color: white;	
+}
+.color-style-p3
+{
+	color: #4494d1;	
+}
+.color-style-p4
+{
+	color: black;	
+}
+.color-style-p5
+{
+	color: azure;	
+}
+#quote-img
+{
+	margin-top: 45px;
+}
+#square-img
+{
+	width: 265px;
+	height: 265px;
 }
 #gridContainer
 {
@@ -125,60 +165,25 @@ nav ul li
 #gridContainer .square:nth-child(1)
 {
 	background-color: #a2c73c;
-}
-.Discover
-{
 	position: relative;
-	color:black;
-	border: none;
-}
-#b1
-{
-	bottom: 10px;
-	left: 75px;
-	position: absolute;
-	background-color: #a2c73c;
 }
 #gridContainer .square:nth-child(3)
 {
-	background-color: #075daa;
-}
-#b2
-{
-	bottom: -13px;
+	position: relative;
 	background-color: #075daa;
 }
 #gridContainer .square:nth-child(7)
 {
-	background-color: #4494d1;
-}
-#b3
-{
-	bottom: -95px;
+	position: relative;
 	background-color: #4494d1;
 }
 #gridContainer .square:nth-child(9)
 {
+	position: relative;
 	background-color: #0eb049;
-}
-#b4
-{
-	background-color: #0eb049;
-}
-#normalContainer
-{
-	margin: 0 auto;
-    text-align: center;
-	width:900px;
-	height: 540px;
-}
-#wel
-{
-	background-color: #0072bc;
 }
 #first
 {
-	position: relative;
 	padding: 10px;
 }
 #first:after
@@ -187,17 +192,14 @@ nav ul li
 	position: absolute;
 	right: 0;
 	top: 50%;
-	width: 0;
-	height: 0;
 	border: 20px solid transparent;
 	border-left-color: #a2c73c;
 	border-right: 0;
-	margin-top: -20px;
-	margin-right: -20px;
+	margin-top: -22px;
+	margin-right: -18px;
 }
 #second
 {
-	position: relative;
 	padding: 10px;
 }
 #second:after
@@ -205,14 +207,12 @@ nav ul li
 	content: '';
 	position: absolute;
 	bottom: 0;
-	width: 0;
 	left: 50%;
-	height: 0;
 	border: 20px solid transparent;
 	border-top-color: #075daa;
 	border-bottom: 0;
-	margin-left: -20px;
-	margin-bottom: -32px;
+	margin-left: -22px;
+	margin-bottom: -19px;
 }
 #third
 {
@@ -220,7 +220,6 @@ nav ul li
 }
 #forth
 {
-	position: relative;
 	padding: 10px;
 }
 #forth:after
@@ -229,8 +228,6 @@ nav ul li
 	position: absolute;
 	top: 0;
 	left: 50%;
-	width: 0;
-	height: 0;
 	border: 20px solid transparent;
 	border-bottom-color: #4494d1;
 	border-top: 0;
@@ -239,7 +236,6 @@ nav ul li
 }
 #fifth
 {
-	position: relative;
 	padding: 10px;
 }
 #fifth:after
@@ -248,30 +244,43 @@ nav ul li
 	position: absolute;
 	left: 0;
 	top: 50%;
-	width: 0;
-	height: 0;
 	border: 20px solid transparent;
 	border-right-color: #0eb049;
 	border-left: 0;
-	margin-top: -35px;
+	margin-top: -15px;
 	margin-left: -20px;
 }
-#Mbutton
+.Discover
 {
-	margin-top: 40px;
-	width:561px;
-	height: 66px;
-	background-color: #a2c73c;
-	color:white;
-	border: none;
-	border-radius: 30px; 
+	margin-left: 80px;
+	position: absolute;
+	margin-top: 0px;
+	margin-bottom: 20px;
+	bottom: 0px;
 }
-#t
+.Discover a
+{
+	color: black;
+	text-decoration: none;
+}
+#normalContainer
+{
+	margin: 0 auto;
+    text-align: center;
+	width:900px;
+
+}
+#wel
+{
+	height: 540px;
+	background-color: #0072bc;
+}
+#wel-title
 {
 	color: white;
-	padding-top: 95px;
+	padding-top: 90px;
 }
-#t2
+#wel-text
 {	
 	padding-top: 60px;
 	margin: 0 auto;
@@ -279,19 +288,36 @@ nav ul li
 	color: white;
 	font-size: 18px;
 }
+#wel-button
+{
+	font-weight: bold;
+	margin-top: 70px;
+	width:561px;
+	height: 66px;
+	background-color: #a2c73c;
+	color:white;
+	border: none;
+	border-radius: 30px; 
+}
+#round-img
+{
+	width: 100px;
+	height :100px;
+}
 #grid2
 {
 	padding-top: 80px;
+	padding-bottom: 70px;
 	margin: 0 auto;
 	width: 1050px;
-	height: 860px;
+	
 }
 .shape
 {
 	text-align: center;
-	display: inline-grid;
+	display: inline-block;
 	width: 345px;
-	height: 430px;
+	
 }
 #bb
 {
@@ -304,19 +330,14 @@ nav ul li
 	border-radius: 30px;
 	border-style: solid;
 }
-#padding
-{
-	padding: 20px;
-}
 #grid2 .shape:nth-child(4)
 {
-	padding-top: 20px;
+	padding-top: 50px;
 	padding-left: 30px;
 	width: 460px;
 }
 #grid2 .shape:nth-child(5)
 {
-	padding-top: 20px;
 	padding-left: 30px;
 	width: 460px;
 }
